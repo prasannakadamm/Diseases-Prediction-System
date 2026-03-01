@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply transition-colors duration-300;
+  }
+}
+
+.glassmorphism {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.glassmorphism-dark {
+  @apply bg-[#050814]/40 backdrop-blur-md border border-primary/20 shadow-[0_8px_32px_0_rgba(14,165,233,0.15)];
+}
+
+.glass-panel {
+  @apply bg-[#050814]/60 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(14,165,233,0.15)] rounded-2xl;
+}
+
+.glass-panel:hover {
+  @apply border-primary/50 shadow-[0_0_20px_rgba(14,165,233,0.3)] transition-all duration-300;
+}
+
+.text-gradient-neon {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-neonCyan to-secondary;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#050814];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50 rounded-full hover:bg-primary transition-colors;
+}
+
+/* Page transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1), transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* EKG Navbar Animation */
+@keyframes heart-beat-draw {
+  0% {
+    stroke-dashoffset: 200;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    stroke-dashoffset: -200;
+    opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: -200;
+    opacity: 0;
+  }
+}
+
+.ekg-path {
+  stroke-dasharray: 200;
+  animation: heart-beat-draw 3s linear infinite;
+}

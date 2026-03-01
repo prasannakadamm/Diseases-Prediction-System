@@ -1,0 +1,17 @@
+{
+    "name": "disease-prediction-system",
+    "version": "1.0.0",
+    "description": "Disease Prediction System ROOT runner",
+    "scripts": {
+        "start": "concurrently \"npm run server\" \"npm run client\" \"npm run ml\"",
+        "dev": "concurrently \"npm run server:dev\" \"npm run client\" \"npm run ml\"",
+        "server": "cd Backend && npm start",
+        "server:dev": "cd Backend && npm run dev",
+        "client": "cd Frontend && npm run dev",
+        "ml": "cd ML_Model && python app.py",
+        "install:all": "npm install && cd Backend && npm install && cd ../Frontend && npm install && cd ../ML_Model && pip install -r requirements.txt"
+    },
+    "dependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
