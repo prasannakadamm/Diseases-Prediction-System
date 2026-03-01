@@ -3,7 +3,7 @@
 **PROJECT TITLE:** AI-Based Disease Prediction & Health Risk Assessment System
 
 **SUBMITTED BY:**  
-[Your Name / Student Name]  
+Prasanna Kadam  
 [Your Roll Number / Student ID]  
 
 **SUBMITTED TO:**  
@@ -24,7 +24,7 @@ I hereby declare that this project report entitled **"AI-Based Disease Predictio
 <br><br>
 
 ## CERTIFICATE
-This is to certify that the project entitled **"AI-Based Disease Prediction & Health Risk Assessment System"** has been successfully completed by **[Your Name]**, student of [Your Course/Degree] during the academic year [Year]. This report is the record of authentic work carried out by them under our supervision and guidance.
+This is to certify that the project entitled **"AI-Based Disease Prediction & Health Risk Assessment System"** has been successfully completed by **Prasanna Kadam**, student of [Your Course/Degree] during the academic year [Year]. This report is the record of authentic work carried out by them under our supervision and guidance.
 
 **Project Guide:** .........................  
 **Head of Department:** .........................  
